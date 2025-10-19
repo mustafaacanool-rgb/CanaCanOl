@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CanaCanOl - Hesap Silme</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      max-width: 600px;
+      margin: auto;
+      text-align: center;
+    }
+    button {
+      padding: 12px 24px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>CanaCanOl Hesabını Sil</h1>
+  <p>Hesabınızı kalıcı olarak silmek için aşağıdaki butona tıklayabilirsiniz.</p>
+  <button onclick="deleteAccount()">Hesabımı Sil</button>
+  <p id="result" style="margin-top: 20px; color: green;"></p>
+
+  <script>
+    function deleteAccount() {
+      // Buraya API çağrısı entegre edebilirsin.
+      // Örn: fetch("https://api.seninuygulaman.com/delete", {...})
+
+      document.getElementById("result").innerText =
+        "Hesap silme isteğiniz alındı. En kısa sürede verileriniz sistemden kaldırılacaktır.";
+    }
+  </script>
+</body>
+</html>
